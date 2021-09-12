@@ -1,0 +1,458 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Scheherazade&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static' , filename='css/css/')}}bootstrap.css">
+    <link rel="stylesheet" href="{{url_for('static' , filename='css/css/')}}font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static' , filename='css/css/')}}home.css">
+    <title>Home</title>
+</head>
+<body>
+
+    <div class="welcome">
+    <svg viewBox="0 0 296 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+    id="logo">
+        <path d="M8.4875 14.4C8.4875 16.5867 9.1275 18.48 10.4075 20.08C11.6875 21.6267 13.2875 23.0667 15.2075 24.4C17.1275 25.7333 19.2075 27.04 21.4475 28.32C23.7408 29.6 25.8475 31.0667 27.7675 32.72C29.6875 34.32 31.2875 36.2133 32.5675 38.4C33.8475 40.5867 34.4875 43.2533 34.4875 46.4C34.4875 48.48 34.1142 50.4267 33.3675 52.24C32.6208 54.0533 31.5542 55.6267 30.1675 56.96C28.8342 58.2933 27.2342 59.3333 25.3675 60.08C23.5008 60.8267 21.4742 61.2 19.2875 61.2C17.2608 61.2 15.5275 60.9867 14.0875 60.56C12.6475 60.1867 11.4475 59.7333 10.4875 59.2C9.3675 58.6133 8.43417 57.9467 7.6875 57.2C7.26084 58 6.67417 58.7467 5.9275 59.44C5.23417 60.1333 4.4875 60.5867 3.6875 60.8H2.4875C2.54084 60.0533 2.59417 59.2533 2.6475 58.4C2.70084 57.7067 2.75417 56.9333 2.8075 56.08C2.86084 55.2267 2.8875 54.4 2.8875 53.6C2.8875 52.6933 2.86084 51.8133 2.8075 50.96C2.75417 50.0533 2.70084 49.2267 2.6475 48.48C2.59417 47.6267 2.54084 46.8 2.4875 46H3.6875C4.91417 50.4267 6.67417 53.8133 8.9675 56.16C11.3142 58.4533 14.4875 59.6 18.4875 59.6C21.6875 59.6 24.2742 58.5867 26.2475 56.56C28.2742 54.48 29.2875 51.6267 29.2875 48C29.2875 45.8133 28.6475 43.9467 27.3675 42.4C26.0875 40.8 24.4875 39.3333 22.5675 38C20.6475 36.6667 18.5408 35.36 16.2475 34.08C14.0075 32.8 11.9275 31.36 10.0075 29.76C8.0875 28.1067 6.4875 26.1867 5.2075 24C3.9275 21.8133 3.2875 19.1467 3.2875 16C3.2875 14.1867 3.63417 12.48 4.3275 10.88C5.02084 9.28 5.98084 7.89334 7.2075 6.72001C8.43417 5.49334 9.87417 4.53334 11.5275 3.84C13.1808 3.14667 14.9675 2.8 16.8875 2.8C18.4875 2.8 19.9008 3.01334 21.1275 3.44C22.3542 3.86667 23.3942 4.32 24.2475 4.8C25.2075 5.38667 26.0875 6.05334 26.8875 6.8C27.3142 6.00001 27.8742 5.25334 28.5675 4.56C29.3142 3.86667 30.0875 3.41334 30.8875 3.2H32.0875C31.9808 4 31.9008 4.8 31.8475 5.6C31.7942 6.34667 31.7408 7.14667 31.6875 8C31.6875 8.8 31.6875 9.6 31.6875 10.4C31.6875 11.3067 31.6875 12.2133 31.6875 13.12C31.7408 13.9733 31.7942 14.7733 31.8475 15.52C31.9008 16.3733 31.9808 17.2 32.0875 18H30.8875C29.6608 13.5733 27.9542 10.2133 25.7675 7.92C23.5808 5.57334 20.8875 4.4 17.6875 4.4C15.0742 4.4 12.8875 5.30667 11.1275 7.12C9.3675 8.93334 8.4875 11.36 8.4875 14.4Z" stroke="white" stroke-width="2"/>
+        <path d="M52.075 39.2V58L56.875 59.2V60H40.475V59.2L45.275 58V6.00001L40.475 4.8V4H56.875V4.8L52.075 6.00001V36.4L69.275 6.8L64.075 4.8V4H76.075V4.8L70.875 6.8L60.795 24.16L76.875 58L81.675 59.2V60H64.475V59.2L69.275 58L56.635 31.36L52.075 39.2Z" stroke="white" stroke-width="2"/>
+        <path d="M101.256 37.6V58L106.056 59.2V60H89.6562V59.2L94.4563 58V38L82.0563 6.00001L77.2562 4.8V4H94.0563V4.8L89.2562 6.00001L100.616 35.2L111.656 6.8L106.456 4.8V4H118.456V4.8L113.256 6.8L101.256 37.6Z" stroke="white" stroke-width="2"/>
+        <path d="M144.894 14.4C144.894 16.5867 145.534 18.48 146.814 20.08C148.094 21.6267 149.694 23.0667 151.614 24.4C153.534 25.7333 155.614 27.04 157.854 28.32C160.147 29.6 162.254 31.0667 164.174 32.72C166.094 34.32 167.694 36.2133 168.974 38.4C170.254 40.5867 170.894 43.2533 170.894 46.4C170.894 48.48 170.52 50.4267 169.774 52.24C169.027 54.0533 167.96 55.6267 166.574 56.96C165.24 58.2933 163.64 59.3333 161.774 60.08C159.907 60.8267 157.88 61.2 155.694 61.2C153.667 61.2 151.934 60.9867 150.494 60.56C149.054 60.1867 147.854 59.7333 146.894 59.2C145.774 58.6133 144.84 57.9467 144.094 57.2C143.667 58 143.08 58.7467 142.334 59.44C141.64 60.1333 140.894 60.5867 140.094 60.8H138.894C138.947 60.0533 139 59.2533 139.054 58.4C139.107 57.7067 139.16 56.9333 139.214 56.08C139.267 55.2267 139.294 54.4 139.294 53.6C139.294 52.6933 139.267 51.8133 139.214 50.96C139.16 50.0533 139.107 49.2267 139.054 48.48C139 47.6267 138.947 46.8 138.894 46H140.094C141.32 50.4267 143.08 53.8133 145.374 56.16C147.72 58.4533 150.894 59.6 154.894 59.6C158.094 59.6 160.68 58.5867 162.654 56.56C164.68 54.48 165.694 51.6267 165.694 48C165.694 45.8133 165.054 43.9467 163.774 42.4C162.494 40.8 160.894 39.3333 158.974 38C157.054 36.6667 154.947 35.36 152.654 34.08C150.414 32.8 148.334 31.36 146.414 29.76C144.494 28.1067 142.894 26.1867 141.614 24C140.334 21.8133 139.694 19.1467 139.694 16C139.694 14.1867 140.04 12.48 140.734 10.88C141.427 9.28 142.387 7.89334 143.614 6.72001C144.84 5.49334 146.28 4.53334 147.934 3.84C149.587 3.14667 151.374 2.8 153.294 2.8C154.894 2.8 156.307 3.01334 157.534 3.44C158.76 3.86667 159.8 4.32 160.654 4.8C161.614 5.38667 162.494 6.05334 163.294 6.8C163.72 6.00001 164.28 5.25334 164.974 4.56C165.72 3.86667 166.494 3.41334 167.294 3.2H168.494C168.387 4 168.307 4.8 168.254 5.6C168.2 6.34667 168.147 7.14667 168.094 8C168.094 8.8 168.094 9.6 168.094 10.4C168.094 11.3067 168.094 12.2133 168.094 13.12C168.147 13.9733 168.2 14.7733 168.254 15.52C168.307 16.3733 168.387 17.2 168.494 18H167.294C166.067 13.5733 164.36 10.2133 162.174 7.92C159.987 5.57334 157.294 4.4 154.094 4.4C151.48 4.4 149.294 5.30667 147.534 7.12C145.774 8.93334 144.894 11.36 144.894 14.4Z" stroke="white" stroke-width="2"/>
+        <path d="M214.081 32C214.081 36.9067 213.521 41.2 212.401 44.88C211.335 48.5067 209.895 51.5467 208.081 54C206.321 56.4 204.321 58.2133 202.081 59.44C199.841 60.6133 197.575 61.2 195.281 61.2C192.988 61.2 190.721 60.6133 188.481 59.44C186.241 58.2133 184.215 56.4 182.401 54C180.641 51.5467 179.201 48.5067 178.081 44.88C177.015 41.2 176.481 36.9067 176.481 32C176.481 27.0933 177.015 22.8267 178.081 19.2C179.201 15.52 180.641 12.48 182.401 10.08C184.215 7.62667 186.241 5.81334 188.481 4.64C190.721 3.41334 192.988 2.8 195.281 2.8C197.575 2.8 199.841 3.41334 202.081 4.64C204.321 5.81334 206.321 7.62667 208.081 10.08C209.895 12.48 211.335 15.52 212.401 19.2C213.521 22.8267 214.081 27.0933 214.081 32ZM206.481 32C206.481 26.5067 206.135 21.9733 205.441 18.4C204.801 14.7733 203.921 11.8933 202.801 9.76C201.735 7.62667 200.535 6.13334 199.201 5.28C197.868 4.42667 196.561 4 195.281 4C194.001 4 192.695 4.42667 191.361 5.28C190.028 6.13334 188.801 7.62667 187.681 9.76C186.615 11.8933 185.735 14.7733 185.041 18.4C184.401 21.9733 184.081 26.5067 184.081 32C184.081 37.4933 184.401 42.0533 185.041 45.68C185.735 49.2533 186.615 52.1067 187.681 54.24C188.801 56.3733 190.028 57.8667 191.361 58.72C192.695 59.5733 194.001 60 195.281 60C196.561 60 197.868 59.5733 199.201 58.72C200.535 57.8667 201.735 56.3733 202.801 54.24C203.921 52.1067 204.801 49.2533 205.441 45.68C206.135 42.0533 206.481 37.4933 206.481 32Z" stroke="white" stroke-width="2"/>
+        <path d="M232.466 31.2V58L237.266 59.2V60H220.866V59.2L225.666 58V6.00001L220.866 4.8V4H253.266C253.159 4.48 253.079 5.04 253.026 5.68C252.972 6.26667 252.919 6.96 252.866 7.76C252.866 8.50667 252.866 9.38667 252.866 10.4C252.866 11.1467 252.866 11.8933 252.866 12.64C252.919 13.3333 252.972 14 253.026 14.64C253.079 15.3867 253.159 16.1067 253.266 16.8H252.466C251.079 15.4133 249.932 13.76 249.026 11.84C248.119 9.92 247.666 7.84 247.666 5.6H232.466V29.6H240.066L243.666 22.4H244.466V38.4H243.666L240.066 31.2H232.466Z" stroke="white" stroke-width="2"/>
+        <path d="M278.903 58L283.703 59.2V60H267.303V59.2L272.103 58V5.6H263.703C263.703 7.84 263.25 9.92 262.343 11.84C261.436 13.76 260.29 15.4133 258.903 16.8H258.103C258.156 16.1067 258.21 15.3867 258.263 14.64C258.316 14 258.37 13.3333 258.423 12.64C258.476 11.8933 258.503 11.1467 258.503 10.4C258.503 9.38667 258.476 8.50667 258.423 7.76C258.37 6.96 258.316 6.26667 258.263 5.68C258.21 5.04 258.156 4.48 258.103 4H292.903C292.796 4.48 292.716 5.04 292.663 5.68C292.61 6.26667 292.556 6.96 292.503 7.76C292.503 8.50667 292.503 9.38667 292.503 10.4C292.503 11.1467 292.503 11.8933 292.503 12.64C292.556 13.3333 292.61 14 292.663 14.64C292.716 15.3867 292.796 16.1067 292.903 16.8H292.103C290.716 15.4133 289.57 13.76 288.663 11.84C287.756 9.92 287.303 7.84 287.303 5.6H278.903V58Z" stroke="white" stroke-width="2"/>
+        </svg>
+        <p id="slang">نحن نقدم الخبرة</p>   
+    </div>
+<!--NavBar-->
+<header>
+    <nav>
+        <p>SkySoft-Team</p>
+        <ul>
+            <li class="item"><a href="#aboutC" class="link">الرئيسية</a></li>
+            <li class="item"><a href="#ConatacUs" class="link">تواصل معنا</a></li>
+            <li class="item"><a href="#AboutCompany" class="link">من نحن ؟</a></li>
+            <li class="item"><a href="#ServiceCompany" class="link">خدمتنا</a></li>
+            <li class="item"><a href="#ProductsCompany" class="link">منتجات Hardware</a></li>
+        </ul>
+        <button class="btn" id="btnA"><i id="barsBTN" class="fa fa-bars"></i></button>
+        <div class="clearfix"></div>
+    </nav>
+
+    <div id="HiddenNav">
+        <h6 class="mt-4">القائمة</h6>
+        <ul>
+            <li class="item"><a href="#aboutC" class="link">الرئيسية</a></li>
+            <li class="item"><a href="#ConatacUs" class="link">تواصل معنا</a></li>
+            <li class="item"><a href="#AboutCompany" class="link">من نحن ؟</a></li>
+            <li class="item"><a href="#ServiceCompany" class="link">خدمتنا</a></li>
+            <li class="item"><a href="#ProductsCompany" class="link">منتجات Hardware</a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+
+</header>
+<!--EndOFNavBar-->
+<!--Fslider-->
+<div id="aboutC" class="splide">
+	<div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+                <div class="info">
+                    <img class="backImage" src="{{url_for('static' , filename='images/')}}Final-Company-Background-Image.jpg">
+                    <div class="gradient"></div>
+                    <div class="detail">
+                    <div class="panaroma">
+                        <p id="title" class="animate">
+                            عن الشركة
+                        </p>
+                        <div class="more">
+                            <p class="animateFont">
+                                اسست الشركه عام 2000 علي يد خبراء في مجال التسويق والاداره ومتخصصين فى مجال البرمجيات المتقدمه وتعد الشركه احدى ابرز الشركات فى مجال برمجه وتطوير تطبيقات المحاسبه وانظمه الكاشير والباركود المتكامله لجميع الانشطه التجارية والصناعية وايضا الاعلامية.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </li>
+			<li class="splide__slide">
+                <div class="info">
+                    <img class="backImage" src="{{url_for('static' , filename='images/')}}skyscrapers-from-low-angle-view_1359-568.jpg">
+                    <div class="gradient"></div>
+                    <div class="detail">
+                        <div class="panaroma">
+                        <p id="title" class="">
+                            العملاء والموردين
+                        </p>
+                        <div class="more">
+                            <p class="">
+                                عمل قاعدة بيانات خاصه للعملاء بالمنطقه او حسب المندوب او بالمدينه او بالقريه وادخال بيانات عددلا نهاي من العملاء وادخال بيانات عددلانهائى من العملاء وتسجيل بيانات الموردين ومتابعه كافه حسابتهم ومواعيد الدفعات.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </li>
+			<li class="splide__slide">
+                <div class="info">
+                    <img class="backImage" src="{{url_for('static' , filename='images/')}}643353.png">
+                    <div class="gradient"></div>
+                    <div class="detail">
+                        <div class="panaroma">
+                        <p id="title" class="">
+                            المشتريات
+                        </p>
+                        <div class="more">
+                            <p class="">
+                                تسجيل بيانات اصناف المشتريات امكانيه وضع اسعار مختلفه للموسسه التجاريه تسجيل اسعار الشراء عرض بيانات مشتريات اى عميلفى اىفتره يحددها البائع تسجيل بيانات المرتجع من المنتجات سهوله تسجيل او استدعاء اى صنف عن طريق قارىء باركود او ادخال اسم المنتج يدويا 
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </li>
+		</ul>
+	</div>
+</div>
+<!--endOfFslider-->
+
+<!--Welcome Section-->
+<section id="AboutCompany">
+<h1 class="mt-5 mb-3 aboutCompanyTitle" style="text-align: center;font-family: 'Tajawal', sans-serif; color: #1E455C53; transition: all 1.0s ease-in-out; transform: scale(0.5);" >عن الشركة</h1>
+<div class="container flexContainer">
+    <div class="about">
+            <svg id="certificate" xmlns="http://www.w3.org/2000/svg" width="94.479" height="107.04" viewBox="0 0 194.479 207.04">
+                <path id="Path_1" class="cerP" data-name="Path 1" d="M197.557,0H50.026A15.671,15.671,0,0,0,34.373,15.653V46.467a3.033,3.033,0,0,0,6.066,0V15.653a9.6,9.6,0,0,1,9.587-9.587H186.87C183.9,11.02,185.532,4.5,185.1,178.76a9.651,9.651,0,0,1-9.64,9.64H131.506v-6.5h31.534a3.033,3.033,0,0,0,3.033-3.033,9.514,9.514,0,0,1,9.5-9.5,3.033,3.033,0,0,0,3.033-3.033V107.344a3.033,3.033,0,0,0-6.066,0V163.6A15.615,15.615,0,0,0,160.3,175.84h-28.8V163.792a34.435,34.435,0,1,0-37.47,0V175.84h-28.8A15.614,15.614,0,0,0,53,163.6V30.866A15.614,15.614,0,0,0,65.238,18.626H160.3a15.614,15.614,0,0,0,12.239,12.239v63.26a3.033,3.033,0,1,0,6.066,0v-66a3.033,3.033,0,0,0-3.033-3.033,9.514,9.514,0,0,1-9.5-9.5,3.033,3.033,0,0,0-3.033-3.033H62.5a3.033,3.033,0,0,0-3.033,3.033,9.514,9.514,0,0,1-9.5,9.5,3.033,3.033,0,0,0-3.033,3.033V166.336a3.033,3.033,0,0,0,3.033,3.033,9.514,9.514,0,0,1,9.5,9.5A3.033,3.033,0,0,0,62.5,181.9H94.036v6.5l-55.364.013c2.594-4.333,1.53-6.134,1.767-22.089,0,0,0-.005,0-.008V59.557a3.033,3.033,0,0,0-6.066,0V163.291H18.565a3.033,3.033,0,0,0-3.033,3.033v15.7a12.468,12.468,0,0,0,12.445,12.453h.008c85.727-.027,19.028-.005,66.051-.013v9.541a3.033,3.033,0,0,0,4.927,2.368l13.808-11.045,13.808,11.045a3.033,3.033,0,0,0,4.927-2.368v-9.541h43.957A15.724,15.724,0,0,0,191.17,178.76V31.188h15.809a3.033,3.033,0,0,0,3.033-3.033v-15.7A12.469,12.469,0,0,0,197.557,0ZM21.6,182.025V169.357H34.373v12.668a6.388,6.388,0,0,1-12.775,0Zm62.8-47.1a28.369,28.369,0,1,1,28.369,28.369A28.4,28.4,0,0,1,84.4,134.922ZM125.44,197.7l-10.775-8.619a3.032,3.032,0,0,0-3.789,0L100.1,197.7V166.932a34.3,34.3,0,0,0,25.338,0V197.7Zm78.5-172.575H191.169V12.454a6.388,6.388,0,0,1,12.776,0Z" transform="translate(-15.532)" stroke="green" stroke-width="2" fill="#00e64d"/>
+                <path id="Path_2" class="cerP" data-name="Path 2" d="M233.71,108.718H158.345a3.033,3.033,0,1,0,0,6.066H233.71a3.033,3.033,0,0,0,0-6.066Z" transform="translate(-98.788 -64.755)" stroke="green" stroke-width="2" fill="#00e64d"/>
+                <path id="Path_3" class="cerP" data-name="Path 3" d="M233.71,139.78H158.345a3.033,3.033,0,0,0,0,6.066H233.71a3.033,3.033,0,0,0,0-6.066Z" transform="translate(-98.788 -83.256)" stroke="green" stroke-width="2" fill="#00e64d"/>
+                <path id="Path_4" class="cerP" data-name="Path 4" d="M236.743,173.875a3.033,3.033,0,0,0-3.033-3.033H158.345a3.033,3.033,0,0,0,0,6.066H233.71A3.033,3.033,0,0,0,236.743,173.875Z" stroke="green" stroke-width="2" transform="translate(-98.788 -101.757)" fill="#00e64d"/>
+                <path id="Path_5" class="cerP" data-name="Path 5" d="M244.079,68.191a3.033,3.033,0,1,0,0-6.066H212.563a3.033,3.033,0,0,0,0,6.066Z" transform="translate(-131.082 -37.003)" stroke="green" stroke-width="2" fill="#00e64d"/>
+                <path id="Path_6" class="cerP" data-name="Path 6" d="M223.778,323.308a21.874,21.874,0,1,0-10.818-40.889,3.033,3.033,0,0,0,3,5.269,15.785,15.785,0,1,1-6.859,7.85,3.033,3.033,0,0,0-5.628-2.262,21.885,21.885,0,0,0,20.3,30.032Z"  transform="translate(-126.539 -166.512)" stroke="green" stroke-width="2" fill="#00e64d"/>
+                <path id="Path_7" class="cerP" data-name="Path 7" d="M212.563,201.6a3.033,3.033,0,1,0,0,6.066h31.516a3.033,3.033,0,1,0,0-6.066Z" transform="translate(-131.082 -120.076)" stroke="green" stroke-width="2" fill="#00e64d"/>
+              </svg>
+              <div class="clearfix" style="height: 32%;"></div>
+              <h5 class="mt-2 mb-2">سنوات الخبرة</h5>
+              <div class="details container">
+              <p class="mt-3 mb-2">عدد السنوات التي قضيناها في خدمة عملائنا وتغلبنا علي المشاكل وتقديم افضل الخدمات للعميل</p>
+            </div>
+            <div class="details container">
+                <span class="mt-3 mb-2" id="CountUp1">0</span>
+            </div>
+            </div>
+    <div class="about">
+        <svg id="handShake" xmlns="http://www.w3.org/2000/svg" width="146.009" height="99.62" viewBox="0 0 206.009 159.62">
+            <g id="XMLID_1321_" transform="translate(18.195 -21)">
+              <g id="XMLID_396_" transform="translate(-18.195 21)">
+                <path id="XMLID_429_" class="cerP" stroke="blue" stroke-width="2" d="M204.716,111.9,199.35,102.6a4.023,4.023,0,1,0-6.969,4.024l5.366,9.295a1.569,1.569,0,0,1-.575,2.145l-14.19,8.193a1.574,1.574,0,0,1-2.145-.575L152.291,76.241a1.573,1.573,0,0,1,.575-2.146l14.19-8.192a1.573,1.573,0,0,1,2.146.575l5.074,8.789a4.023,4.023,0,0,0,6.969-4.023l-5.074-8.789a9.628,9.628,0,0,0-13.138-3.52l-14.19,8.193a9.582,9.582,0,0,0-4.349,5.407H104.266a21.007,21.007,0,0,0-14.952,6.193l-4.122,4.122a47.6,47.6,0,0,0-11.04-1.3H61.663a9.588,9.588,0,0,0-4.5-5.921l-14.19-8.193a9.618,9.618,0,0,0-13.138,3.52L1.293,120.394a9.617,9.617,0,0,0,3.52,13.138L19,141.725a9.557,9.557,0,0,0,4.792,1.287,9.683,9.683,0,0,0,1.766-.165l11.614,11.615a14.635,14.635,0,0,0-.27,2.8A14.458,14.458,0,0,0,50.576,171.7a14.7,14.7,0,0,0-.081,1.528,14.475,14.475,0,0,0,14.475,14.475c.105,0,.209-.005.313-.008,0,.1-.008.208-.008.313a14.475,14.475,0,0,0,14.475,14.475c.105,0,.209-.005.313-.008,0,.1-.008.208-.008.313a14.474,14.474,0,0,0,24.709,10.235l5.724-5.723a14.383,14.383,0,0,0,3.533-5.789,14.486,14.486,0,0,0,22.415-7.356,14.481,14.481,0,0,0,22.077-9.211,14.477,14.477,0,0,0,14.8-23.975l-9.391-9.391,17.141-17.141a9.686,9.686,0,0,0,1.149.071,9.559,9.559,0,0,0,4.792-1.286l14.19-8.192a9.617,9.617,0,0,0,3.521-13.137ZM8.836,126.563a1.57,1.57,0,0,1-.574-2.145L36.808,74.974a1.563,1.563,0,0,1,.954-.731,1.613,1.613,0,0,1,.411-.054,1.549,1.549,0,0,1,.781.21l14.19,8.193a1.573,1.573,0,0,1,.575,2.145L25.172,134.181a1.573,1.573,0,0,1-2.145.575Zm36.117,30.7a6.385,6.385,0,0,1,1.883-4.545l3.472-3.472a6.428,6.428,0,1,1,9.09,9.09l-3.472,3.472a6.428,6.428,0,0,1-10.973-4.545Zm20.017,22.4a6.427,6.427,0,0,1-4.545-10.972l5.723-5.723a6.428,6.428,0,1,1,9.09,9.09l-5.723,5.723A6.386,6.386,0,0,1,64.97,179.66ZM79.75,194.44A6.428,6.428,0,0,1,75.2,183.468l5.723-5.723a6.428,6.428,0,1,1,9.09,9.09L84.3,192.558A6.386,6.386,0,0,1,79.75,194.44Zm25.049,7.174-5.724,5.724a6.428,6.428,0,1,1-9.09-9.09l5.723-5.723a6.428,6.428,0,1,1,9.09,9.09Zm62.825-25.859a6.427,6.427,0,0,1-9.09,0l-38.4-38.4a4.024,4.024,0,1,0-5.69,5.69l34.441,34.441a6.428,6.428,0,1,1-9.09,9.09L98.4,145.187a4.024,4.024,0,1,0-5.69,5.69l34.441,34.441a6.428,6.428,0,0,1-9.09,9.09l-7.575-7.575c-.01-.01-.022-.019-.033-.029a14.429,14.429,0,0,0-10.517-4.195c0-.107.008-.213.008-.32a14.457,14.457,0,0,0-14.788-14.46c0-.107.008-.213.008-.32a14.465,14.465,0,0,0-15.857-14.4,14.474,14.474,0,0,0-24.694-9.554l-3.472,3.472-.012.012L32.2,138.1,60.207,89.591H74.153a39.508,39.508,0,0,1,4.084.213l-4.6,4.6a14.475,14.475,0,0,0,20.47,20.471l10.862-10.862,62.654,62.653a6.435,6.435,0,0,1,0,9.09Zm-38.657-59.127a22.833,22.833,0,0,0,9.444-18.505,4.023,4.023,0,1,0-8.047,0,14.786,14.786,0,0,1-7.206,12.7L107.834,95.5a4.019,4.019,0,0,0-5.686-.041L88.418,109.184a6.428,6.428,0,1,1-9.09-9.09L95,84.417a13.012,13.012,0,0,1,9.262-3.836H145.5l28.364,49.128c.067.116.14.227.212.339l-15.847,15.847Z" transform="translate(0 -57.647)" fill="#00a0ff"/>
+                <path id="XMLID_436_" class="cerP" stroke="blue" stroke-width="2"  d="M458.331,133.461a4.025,4.025,0,1,0-2.845-1.179A4.061,4.061,0,0,0,458.331,133.461Z" transform="translate(-271.517 -98.148)" fill="#20acff"/>
+              </g>
+            </g>
+          </svg>
+          <div class="clearfix" style="height: 32%;"></div>
+          <h5 class="mt-2 mb-2">وكلائنا</h5>
+          <div class="details container">
+          <p class="mt-3 mb-2">شركائنا في مسيرة النجاح التي قدمناها لسوق البرامج الالكترونية</p>
+        </div>
+        <div class="details container">
+            <span class="mt-3 mb-2 CountUp" id="CountUp3">0</span>
+        </div>
+    </div>
+    <div class="about">
+        <svg id="web-programming" xmlns="http://www.w3.org/2000/svg" width="127.761" height="106.835" viewBox="0 0 177.761 156.835">
+            <path id="Path_138" class="cerP" stroke="black" stroke-width="2" data-name="Path 138" d="M136.922,219.2a2.923,2.923,0,0,1-1.9-.7L116.032,202.33a2.936,2.936,0,0,1,0-4.469l18.991-16.171a2.934,2.934,0,1,1,3.8,4.468l-16.365,13.937,16.365,13.937a2.935,2.935,0,0,1-1.9,5.17Zm0,0" transform="translate(-66.786 -105.11)" fill="#1e455c"/>
+            <path id="Path_139" class="cerP" stroke="black" stroke-width="2" data-name="Path 139" d="M252.644,219.2a2.936,2.936,0,0,1-1.9-5.17L267.1,200.094l-16.365-13.937a2.934,2.934,0,0,1,3.8-4.468l18.991,16.171a2.936,2.936,0,0,1,0,4.469L254.543,218.5a2.923,2.923,0,0,1-1.9.7Zm0,0" transform="translate(-145.018 -105.11)" fill="#1e455c"/>
+            <path id="Path_140" class="cerP" stroke="black" stroke-width="2" data-name="Path 140" d="M191.893,215.09a2.984,2.984,0,0,1-.609-.064,2.936,2.936,0,0,1-2.267-3.477l11.836-56.194a2.935,2.935,0,1,1,5.743,1.21l-11.836,56.194A2.935,2.935,0,0,1,191.893,215.09Zm0,0" transform="translate(-109.735 -88.869)" fill="#1e455c"/>
+            <path id="Path_141" class="cerP" stroke="yellow" stroke-width="2" data-name="Path 141" d="M158.057,156.835H19.7A19.727,19.727,0,0,1,0,137.13V19.7A19.728,19.728,0,0,1,19.7,0H158.057a19.728,19.728,0,0,1,19.7,19.7V137.13A19.727,19.727,0,0,1,158.057,156.835ZM19.7,5.869A13.851,13.851,0,0,0,5.869,19.7V137.13A13.851,13.851,0,0,0,19.7,150.966H158.057a13.851,13.851,0,0,0,13.835-13.835V19.7A13.851,13.851,0,0,0,158.057,5.869Zm0,0" fill="#fff236"/>
+            <path id="Path_142" class="cerP" stroke="yellow" stroke-width="2" data-name="Path 142" d="M174.827,103.959H2.935a2.935,2.935,0,0,1,0-5.869H174.827a2.935,2.935,0,0,1,0,5.869Zm0,0" transform="translate(0 -56.966)" fill="#fff236"/>
+            <path id="Path_143" class="cerP" stroke="black" stroke-width="2" data-name="Path 143" d="M106.737,52.864a9.287,9.287,0,1,1,9.287-9.287,9.3,9.3,0,0,1-9.287,9.287Zm0-12.705a3.418,3.418,0,1,0,3.418,3.418,3.422,3.422,0,0,0-3.418-3.418Zm0,0" transform="translate(-56.594 -19.914)" fill="#1e455c"/>
+            <path id="Path_144" class="cerP" stroke="black" stroke-width="2" data-name="Path 144" d="M38.674,52.649a9.287,9.287,0,1,1,9.287-9.287A9.3,9.3,0,0,1,38.674,52.649Zm0-12.705a3.418,3.418,0,1,0,3.418,3.418A3.423,3.423,0,0,0,38.674,39.944Zm0,0" transform="translate(-17.066 -19.789)" fill="#1e455c"/>
+            <path id="Path_145" class="cerP" stroke="black" stroke-width="2" data-name="Path 145" d="M174.8,53.077a9.287,9.287,0,1,1,9.287-9.287A9.3,9.3,0,0,1,174.8,53.077Zm0-12.705a3.418,3.418,0,1,0,3.418,3.418A3.421,3.421,0,0,0,174.8,40.372Zm0,0" transform="translate(-96.123 -20.038)" fill="#1e455c"/>
+          </svg> 
+          <div class="clearfix" style="height: 32%;"></div>
+          <h5 class="mt-2 mb-2">برامجنا</h5>
+          <div class="details container">
+          <p class="mt-3 mb-2">عدد البرامج التي تقدمها شركة سكاي سوف من برامج حسابات ومدرسين ومتاجر الكترونية</p>
+        </div>
+        <div class="details container">
+            <span class="mt-3 mb-2 CountUp" id="CountUp2">0</span>
+        </div>
+    </div>
+</div>
+</section>
+<!--endOfWelcomeSection-->
+
+<!--ServiceSection-->
+<section id="ServiceCompany">
+    <h1 class="mt-5 mb-3 aboutCompanyTitle" style="text-align: center;font-family: 'Tajawal', sans-serif; color: #1E455C53; transition: all 1.0s ease-in-out; transform: scale(0.5);" >خدماتنا</h1>
+    <div class="container ServCon">
+    <div class="oneService">
+        <div class="detailsS">
+            <h6>برنامج سكاي سوفت</h6>
+            <p>كلام كتير اوي عن قد ايه 
+                احنا جامدين جدا في الحسابات</p>
+        </div>
+        <div class="backImage">
+            <img class="imgRight" id="FirstRight" src="{{url_for('static' , filename='images/')}}software-services-png-2.png">
+        </div>
+    </div>
+    <div class="oneService">
+        <div class="backImage">
+            <img class="imgleft" id="FirstLeft" src="{{url_for('static' , filename='images/')}}64a678a12f438ed667574ad3d37e4a2b-removebg-preview.png">
+        </div>
+        <div class="detailsS">
+            <h6>انشاء تطبيقات الهواتف</h6>
+            <p>كلام كتير اوي عن قد ايه 
+                احنا جامدين جدا في السوفت
+                وير وبنعمل اي حاجه</p>
+        </div>
+    </div>
+    <div class="oneService">
+        <div class="detailsS">
+            <h6>انشاء مواقع الويب</h6>
+            <p>كلام كتير اوي عن قد ايه 
+                احنا جامدين جدا في السوفت
+                وير وبنعمل اي حاجه</p>
+        </div>
+        <div class="backImage">
+            <img class="imgRight" id="SecondRight" src="{{url_for('static' , filename='images/')}}pngtree-web-development-illustration-modern-can-be-used-for-landing-pages-web-png-image_1496210-removebg-preview.png">
+        </div>
+    </div>
+    <div class="oneService">
+        <div class="backImage">
+            <img class="imgleft" id="SecondLeft" src="{{url_for('static' , filename='images/')}}B.png">
+        </div>
+        <div class="detailsS">
+            <h6>خدمة هارد وير</h6>
+            <p>كلام كتير اوي عن قد ايه 
+                احنا جامدين جدا في السوفت
+                وير وبنعمل اي حاجه</p>
+        </div>
+    </div>
+    </div>
+    </section>
+<!--EndServiceSection-->
+
+<!--ProductsSection-->
+<section id="ProductsCompany">
+    <h1 class="mt-5 mb-3 aboutCompanyTitle" style="text-align: center;font-family: 'Tajawal', sans-serif; color: #1E455C53; transition: all 1.0s ease-in-out; transform: scale(0.5);" >هاردوير</h1>
+    <div id="ProductsC" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="circleDiv">
+                        <div class="img">
+                            <img src="{{url_for('static' , filename='images/EICONS/')}}camera.png" alt="">
+                        </div>
+                        <p>كاميرات</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circleDiv">
+                        <div class="img">
+                            <img src="{{url_for('static' , filename='images/EICONS/')}}hdd_hard.png" alt="">
+                        </div>
+                        <p>هاردات</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circleDiv">
+                        <div class="img">
+                            <img src="{{url_for('static' , filename='images/EICONS/')}}keyboard.png" alt="">
+                        </div>
+                        <p>لوحات مفاتيح</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circleDiv">
+                        <div class="img">
+                            <img src="{{url_for('static' , filename='images/EICONS/')}}ram.png" alt="">
+                        </div>
+                        <p>رامات</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circleDiv">
+                        <div class="img">
+                            <img src="{{url_for('static' , filename='images/EICONS/')}}screen.png" alt="">
+                        </div>
+                        <p>شاشات</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circleDiv">
+                        <div class="img">
+                            <img src="{{url_for('static' , filename='images/EICONS/')}}wire.png" alt="">
+                        </div>
+                        <p>كابلات</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circleDiv">
+                        <div class="img">
+                            <img src="{{url_for('static' , filename='images/EICONS/')}}papers.png" alt="">
+                        </div>
+                        <p>ورق حرارى</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circleDiv">
+                        <div class="img">
+                            <img src="{{url_for('static' , filename='images/EICONS/')}}printer.png" alt="">
+                        </div>
+                        <p>طابعات</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circleDiv">
+                        <div class="img">
+                            <img src="{{url_for('static' , filename='images/EICONS/')}}scanner.png" alt="">
+                        </div>
+                        <p>Scanners</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circleDiv">
+                        <div class="img">
+                            <img src="{{url_for('static' , filename='images/EICONS/')}}mouse.png" alt="">
+                        </div>
+                        <p>ماوسات</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circleDiv">
+                        <div class="img">
+                            <img src="{{url_for('static' , filename='images/EICONS/')}}router.png" alt="">
+                        </div>
+                        <p>راوتر</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circleDiv">
+                        <div class="img">
+                            <img src="{{url_for('static' , filename='images/EICONS/')}}balance-removebg-preview.png" alt="">
+                        </div>
+                        <p>موازين</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circleDiv">
+                        <div class="img">
+                            <img src="{{url_for('static' , filename='images/EICONS/')}}labtop.png" alt="">
+                        </div>
+                        <p>اجهزة كمبيوتر</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--EndProductsSection-->
+<!--ContactUs-->
+<section id="ConatacUs">
+<h1 class="mt-5 mb-3 aboutCompanyTitle" style="text-align: center;font-family: 'Tajawal', sans-serif;color: #1E455C53; transition: all 1.0s ease-in-out; transform: scale(0.5);" >تواصل معنا</h1>
+<div class="container" id="con">
+<div class="contentCon">
+<div class="ContactForm">
+    <form action="" method="POST" id="ContactForm">
+        <div class="row">
+    <div class="col">
+        <div class="form-group">
+          <label for="name">الاسم</label>
+          <div class="clearfix"></div>
+          <input type="text" class="form-control" id="name" placeholder="اسمك بالكامل">
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <label for="numberP">رقم الهاتف</label>
+            <div class="clearfix"></div>
+            <input type="tel" class="form-control" id="numberP" placeholder="رقم الهاتف">
+        </div>
+    </div>
+    </div>
+        <div class="form-group">
+          <label for="Inquire">استفسارك عن ؟</label>
+          <div class="clearfix"></div>
+          <textarea class="form-control" id="Inquire" rows="3"></textarea>
+        </div>
+        <h5>--او--</h5>
+        <div class="contactOptions">
+         <a href="#/"> <i class="fa fa-facebook-square ml-2"></i></a>
+         <a href="#/"><i class="fa fa-phone-square ml-2"></i></a>
+        </div>
+      </form>
+</div>
+<div class="ContactDiscription">
+<div class="disc">
+    <h3>ايه الي ممكن تكلمنا عشانه ؟</h3>
+    <ul>
+        <li>اطلب نسخة تجريبية من برامجنا</li>
+        <li>اصنع معانا برنامجك الخاص</li>
+        <li>تواصل لغرض التوظيف</li>
+    </ul>
+    
+</div>
+</div>
+</div>
+<div class="BTNS" style="display: flex;">
+    <button class="btn btn-primary" style="margin: auto;">ارسال</button>
+</div>
+</div>
+</section>
+<!--ContactUsEnd-->
+<footer>
+    <div class="CompanyLogo">
+        <div class="logoCon">
+            <p>SkySoft-Team</p>
+        </div>
+    </div>
+    <div class="FooterDetails">
+        <div class="programs">
+            <h6>برامجنا</h6>
+            <ul>
+                <li><a href="/#">Skysoft</a></li>
+                <li><a href="/#">examsita</a></li>
+                <li><a href="/#">e-commerce</a></li>
+            </ul>
+        </div>
+        <div class="navigation">
+            <h6>تصفح</h6>
+            <ul>
+                <li class="item"><a href="#aboutC">الرئيسية</a></li>
+                <li class="item"><a href="#ConatacUs">تواصل معنا</a></li>
+                <li class="item"><a href="#AboutCompany">من نحن ؟</a></li>
+                <li class="item"><a href="#ServiceCompany">خدمتنا</a></li>
+                <li class="item"><a href="#ProductsCompany">منتجات Hardware</a></li>
+            </ul>
+        </div>
+        <div class="companyDetails">
+            <h6>تفاصيل</h6>
+            <p><i class="fa fa-map-marker mr-2"></i> <span>سمنود - برج زايد - الدور الخامس</span></p>
+            <p><i class="fa fa-phone-square mr-2"></i> <span>01005366038</span></p>
+            <p><i class="fa fa-facebook-square mr-2"></i> <span>SkySoft team</span></p>
+        </div>
+    </div>
+    <div class="FooterEND">
+        <span id="allrights">All rights is reserved to SKYSOFT-TEAM &copy; </span>
+        <span id="by">Devolobed by : <span>Mohamed Ehab</span> </span>
+    </div>
+</footer>
+    <script src="{{url_for('static' , filename='js/')}}popper.js"></script>
+    <script src="{{url_for('static' , filename='js/')}}jquery-3.5.1.js"></script>
+    <script src="{{url_for('static' , filename='js/')}}bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="{{url_for('static' , filename='js/')}}jQuerySimpleCounter.js"></script>
+    <script src="{{url_for('static' , filename='js/')}}home.js"></script>
+</body>
+</html>
+    

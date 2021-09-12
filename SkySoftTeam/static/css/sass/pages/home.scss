@@ -1,0 +1,869 @@
+@import '../helpers/variabels';
+
+*{ 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+    background-image: url('C://Users//Hoppa//OneDrive//Desktop//SkySoftTeam//images//A.png');
+    background-repeat: repeat-y;
+}
+.welcome{
+    background-color:#01969F;
+    height: 100vh;
+    opacity: 1;
+    animation: Destroy 1.0s ease 5.5s forwards;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+#logo{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: whiteFill 1.5s ease 1.0s forwards;
+    width: 769;
+    height: 564;
+    @media #{$bigmobile} {
+        width: 309;
+        height: 104; 
+        }
+    @media #{$smallmobile} {
+        width: 309;
+        height: 104;     
+        }
+    path:nth-child(1){
+        stroke-dasharray: 277px;
+        stroke-dashoffset: 277px;
+    }
+    path:nth-child(2){
+        stroke-dasharray: 341px;
+        stroke-dashoffset: 341px;
+    }
+    path:nth-child(3){
+        stroke-dasharray: 251px;
+        stroke-dashoffset: 251px;
+    }
+    path:nth-child(4){
+        stroke-dasharray: 277px;
+        stroke-dashoffset: 277px;
+    }
+    path:nth-child(5){
+        stroke-dasharray: 285px;
+        stroke-dashoffset: 285px;
+    }
+    path:nth-child(6){
+        stroke-dasharray: 260px;
+        stroke-dashoffset: 260px;
+    }
+    path:nth-child(7){
+        stroke-dasharray: 237px;
+        stroke-dashoffset: 237px;
+    }
+}
+
+#slang{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 27px;
+    color: white;
+    font-family: 'Scheherazade', serif;
+    transform: translate(-50%,-50%);
+    &::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-right: white 10px solid;
+        left: 0;
+        background-color: #01969F;
+        animation: Typing 1.5s ease 1.5s forwards;
+    }
+}
+
+
+
+
+
+header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    opacity: 0;
+    animation: OpacityAnimation 1.5s ease-in-out 6.5s forwards;
+    #HiddenNav{
+        width: 40%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: white;
+        transform: translateX(100%);
+        transition: all .5s ease-in-out;
+        h6{
+            text-align: center;
+            font-family: 'Tajawal', sans-serif;
+        }
+        ul{
+            direction: rtl;
+            text-align: center;
+            font-family: 'Tajawal', sans-serif;
+            list-style: none;
+            li{
+                margin: auto;
+                transition: all .5s ease-in-out;
+
+                a{
+                    text-decoration: none;
+                    color: $maincolor;
+                    line-height: 3;
+                }
+                &:hover{
+                    background-color: $maincolor;
+                    a{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+        nav{
+            display: flex;
+            transition: all .5s ease-in-out;
+            p{
+                color: white;
+                font-family: 'GOLDLEAF PERSONAL USE';
+                font-size: 25px;
+                align-self: flex-start;
+                flex: 1;
+                margin-left: 5px;
+            }
+            ul{
+            flex: 1;
+            align-self: flex-end;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            list-style: none;
+            width: 35%;
+            @media #{$bigmobile} {
+                display: none;
+             }
+            @media #{$smallmobile} {
+                display: none;
+            }
+            direction: rtl;
+                li{
+                    margin: auto;
+                    transition: all .5s ease-in-out;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        position: relative;
+                        &:after{
+                            content: "";
+                            border: #e63946 .5px solid;
+                            position: absolute;
+                            bottom: -25;
+                            right: 0;
+                            width: 0%;
+                            opacity: 0;
+                            transition: all .5s ease-in-out;
+                        }
+                        &:hover{
+                            text-decoration: none;
+                            transition: all .5s ease-in-out;
+                            color: white;
+                            &:after{
+                                opacity: 1;
+                                width: 100%;
+                                bottom: -5;
+                            }
+                        }
+                    }
+                }
+            }
+            #btnA{
+                display: none;
+                i{
+                    color: white;
+                }
+                @media #{$bigmobile} {
+                    display: block;
+                 }
+                @media #{$smallmobile} {
+                    display: block;
+                }
+            }
+        }
+    }
+
+
+#aboutC{
+    width: 100%;
+    cursor: grab;
+    background-color: #FFF;
+    &:active{
+        cursor: grabbing;
+    }
+    .info{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        .backImage{
+            width: 100%;
+            height: 100vh;
+        }
+        .gradient{
+            position: absolute;
+            background-color: #000;
+            width: 100%;
+            height: 100vh;
+            opacity: 0.8;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+        .detail{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 3;
+            display: flex;
+            .panaroma{
+                width: clamp(100% , 60% , 100%);
+                height: 60%;
+                text-align: center;
+                margin: auto;
+                position: relative;
+            #title{
+                color:white;
+                font-size: 50px;
+                font-family: 'Scheherazade', serif;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                @media #{$bigmobile} {
+                    width: 100%;
+                 }
+                @media #{$smallmobile} {
+                    width: 100%;
+                }
+            }
+            .more{
+                font-family: 'Scheherazade', serif;
+                width : 70%;
+                @media #{$bigmobile} {
+                    width : 80%;
+                }
+                @media #{$smallmobile} {
+                    width : 90%;
+                }
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                display : flex;
+                p{
+                    color:white;
+                    font-size: 25px;
+                    font-family: 'Scheherazade', serif;
+                    opacity: 0;
+                }
+            }
+        }
+        }
+    }
+}
+#AboutCompany{
+    font-family: 'Tajawal', sans-serif;
+    padding-top: 25px;
+    .flexContainer{
+        display: flex;
+        flex-direction: row;
+        height: 90%;
+        @media #{$bigmobile} {
+            flex-direction: column;
+            height: 240%;
+        }
+        @media #{$smallmobile} {
+            flex-direction: column;
+            height: 240%;
+        }
+        margin: 0px auto;
+        gap:20px;
+        .about{
+            flex: 1;
+            align-self: center;
+            background-color: white;
+            box-shadow: rgb(165, 165, 165) 2px 5px 8px;
+            height: 70vh;
+            position: relative;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-10%);
+            transition: all 1.0s ease-in-out;
+                #certificate{
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    path:nth-child(1){
+                        stroke-dasharray: 3040px;
+                        stroke-dashoffset: 3040px;
+                    }
+                    path:nth-child(2){
+                        stroke-dasharray: 170px;
+                        stroke-dashoffset: 170px;
+                    }
+                    path:nth-child(3){
+                        stroke-dasharray: 170px;
+                        stroke-dashoffset: 170px;
+                    }
+                    path:nth-child(4){
+                        stroke-dasharray: 170px;
+                        stroke-dashoffset: 170px;
+                    }
+                    path:nth-child(5){
+                        stroke-dasharray: 85px;
+                        stroke-dashoffset: 85px;
+                    }
+                    path:nth-child(6){
+                        stroke-dasharray: 235px;
+                        stroke-dashoffset: 235px;
+                    }
+                    path:nth-child(7){
+                        stroke-dasharray: 85px;
+                        stroke-dashoffset: 85px;
+                    }
+                }
+                #handShake{
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    path:nth-child(1){
+                        stroke-dasharray: 2075px;
+                        stroke-dashoffset: 2075px;
+                    }
+                    path:nth-child(2){
+                        stroke-dasharray: 60px;
+                        stroke-dashoffset: 60px;
+                    }
+                }
+                #web-programming{
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    path:nth-child(1){
+                        stroke-dasharray: 119px;
+                        stroke-dashoffset: 119px;
+                    }
+                    path:nth-child(2){
+                        stroke-dasharray: 119px;
+                        stroke-dashoffset: 119px;
+                    }
+                    path:nth-child(3){
+                        stroke-dasharray: 135px;
+                        stroke-dashoffset: 135px;
+                    }
+                    path:nth-child(4){
+                        stroke-dasharray: 1235px;
+                        stroke-dashoffset: 1235px;
+                    }
+                    path:nth-child(5){
+                        stroke-dasharray: 365px;
+                        stroke-dashoffset: 365px;
+                    }
+                    path:nth-child(6){
+                        stroke-dasharray: 80px;
+                        stroke-dashoffset: 80px;
+                    }
+                    path:nth-child(7){
+                        stroke-dasharray: 80px;
+                        stroke-dashoffset: 80px;
+                    }
+                    path:nth-child(8){
+                        stroke-dasharray: 80px;
+                        stroke-dashoffset: 80px;
+                    }
+                }
+                h5{
+                    font-family: 'Tajawal', sans-serif;
+                    color: $maincolor;
+                    font-size: 25px;
+                    transition: all .5s ease-in-out;
+                }
+                .about-text{
+                    opacity: 0;
+                }
+                .details{
+                    text-align: center;
+                    margin: 2px auto;
+                    height: 75px;
+                    p{
+                        font-family: 'Tajawal', sans-serif;
+                        color: #747474;
+                    }
+                    span{
+                        font-family: 'Tajawal', sans-serif;
+                        color: $maincolor;
+                        font-size: 120px;
+                    }
+                }
+
+        }
+    }
+}
+#ServiceCompany{
+    padding-top: 25px;
+    .ServCon{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .oneService{
+            flex: 1;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            @media #{$bigmobile} {
+                flex-direction: column;
+            }
+            @media #{$smallmobile} {
+                flex-direction: column;
+            }
+            .backImage{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 310px;
+                    height: 310px;
+                    @media #{$bigmobile} {
+                        width: 210px;
+                        height: 210px;                
+                        }
+                    @media #{$smallmobile} {
+                        width: 210px;
+                        height: 210px;
+                     }
+                }
+                .imgRight{
+                    opacity: 0;
+                    transform: translateX(90%);
+                    transition: all 1.0s ease-in-out ;
+                    @media #{$bigmobile} {
+                        transform: translateX(0%);
+                    }
+                    @media #{$smallmobile} {
+                        transform: translateX(0%);
+                    }
+                }
+                .imgleft{
+                    opacity: 0;
+                    transform: translateX(-90%);
+                    transition: all 1.0s ease-in-out ;
+                    @media #{$bigmobile} {
+                        transform: translateX(0%);
+                    }
+                    @media #{$smallmobile} {
+                        transform: translateX(0%);
+                    }
+                }
+            }
+            .detailsS{
+                flex: 1;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                h6{
+                    font-family: Hesham;
+                    font-size: 55px;
+                    color: $maincolor;
+                }
+                p{
+                    color: rgb(173, 173, 173);
+                    font-size: 30px;
+                    width: 80%;
+                    margin: 0px auto;
+                }
+            }
+        }
+    }
+    
+}
+#ProductsCompany{
+    padding-top: 25px;
+    .circleDiv{
+            text-align: center;
+            display: grid;
+            grid-template-rows: 1fr;
+            justify-content: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        .img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: flex;
+            border: black 1px solid;
+            background-color: white;
+            transition: all 0.2s ease-in-out;
+            img{
+                width: 80px;
+                height: 95px;
+                margin: auto;
+            }
+        }
+        p{
+            font-family: 'Tajawal', sans-serif;
+            color: $maincolor;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+}
+#ConatacUs{
+    padding-top: 25px;
+    height: fit-content;
+    position: relative;
+    #con{
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all .5s ease-in-out;
+    .contentCon{
+        display: flex;
+        flex-direction: row;
+        @media #{$bigmobile} {
+            flex-direction: column;
+        }
+        @media #{$smallmobile} {
+            flex-direction: column;
+        }
+    .ContactForm{
+        flex: 1;
+        padding: 10px;
+        form{
+            h5{
+                font-family: 'Tajawal', sans-serif;
+                color: $maincolor;
+                text-align: center;
+            }
+            label{
+                float: right;
+            }
+            .contactOptions{
+                text-align: center;
+                a{
+                i{
+                    cursor: pointer;
+                    color: $maincolor;
+                    font-size: 25px; 
+                    transition: all .3s ease-in-out;
+                }
+                &:hover {
+                    i{
+                        color: red;
+                    }
+                }
+            }
+            }
+        }
+
+    }
+    .ContactDiscription{
+        flex: 1;
+        display: flex;
+        .disc{
+            margin: auto;
+            text-align: center;
+            h3{
+                font-family: 'Tajawal', sans-serif;
+                color: $maincolor;
+            }
+            ul{
+                margin: 2px auto;
+                direction: rtl;
+                text-align: start;
+                width: fit-content;
+                font-family: 'Tajawal', sans-serif;
+            }
+        }
+    }
+}
+
+           
+}
+}
+
+footer{
+    margin-top: 25px;
+    width: 100%;
+    background-color: $maincolor;
+    height: fit-content;
+    overflow: hidden;
+    .CompanyLogo{
+        padding-bottom: 5px;
+        display: flex;
+        .logoCon{
+            margin: auto;
+            width: 20%;
+            @media #{$bigmobile} {
+                width: 50%;
+            }
+            @media #{$smallmobile} {
+                width: 50%;
+            }
+            padding: 15px;
+            background-color: #082738;
+            border-radius: 0px 0px 15px 15px;
+            display: flex;
+            transform: translateY(-40%);
+            opacity: 0;
+            transition: all .5s ease-in-out;
+            p{
+                margin: auto;
+                color: white;
+                font-family: 'GOLDLEAF PERSONAL USE';
+                font-size: 25px;
+            }
+        }
+    }
+    .FooterDetails{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        @media #{$bigmobile} {
+            flex-direction: column;
+        }
+        @media #{$smallmobile} {
+            flex-direction: column;
+        }
+        .programs , .navigation , .companyDetails {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            direction: rtl;
+            h6{
+                font-family: 'Tajawal', sans-serif;
+                text-align: center;
+                color:white;
+                align-self: flex-start;
+                margin: 3px;
+                @media #{$bigmobile} {
+                    align-self: center;
+                    font-weight: 900;
+                }
+                @media #{$smallmobile} {
+                    align-self: center;
+                    font-weight: 900;
+                }
+            }
+            ul{
+                direction: rtl;
+                text-align: start;
+                @media #{$bigmobile} {
+                    text-align: center;
+                    margin: auto;
+                }
+                @media #{$smallmobile} {
+                    text-align: center;
+                    margin: auto;
+                }
+                width: fit-content;
+                font-family: 'Tajawal', sans-serif;
+                list-style: none;
+                li{
+                    margin: auto;
+                    transition: all .5s ease-in-out;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        position: relative;
+                        &:after{
+                            content: "";
+                            border: #e63946 .5px solid;
+                            position: absolute;
+                            bottom: -25;
+                            right: 0;
+                            width: 0%;
+                            opacity: 0;
+                            transition: all .5s ease-in-out;
+                        }
+                        &:hover{
+                            text-decoration: none;
+                            transition: all .5s ease-in-out;
+                            color: white;
+                            &:after{
+                                opacity: 1;
+                                width: 100%;
+                                bottom: -5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .companyDetails{
+            p{
+                align-self: flex-start;
+                @media #{$bigmobile} {
+                    align-self: center;
+                }
+                @media #{$smallmobile} {
+                    align-self: center;
+                }
+                i{
+                    color: orangered;
+                }
+                span{
+                    font-family: 'Tajawal', sans-serif;
+                    color: white;
+                }
+            }
+        }
+    }
+    .FooterEND{
+        background-color:#082738 ;
+        padding: 5px;
+        text-align: center;
+        span{
+            color: white;
+            margin-right: 3px;
+        }
+        #by{
+            span{
+                color: orangered;
+            }
+        }
+
+    }
+}
+//animation
+.nav-in{
+    transform: translateX(0%) !important;
+}
+.active-product{
+    background-color: #01969F !important;
+}
+.fade-in{
+    opacity: 1 !important;
+    transform: translate(-50%,5%) !important;
+}
+.fade-in-opacity{
+    opacity: 1 !important;
+    transform: translateY(0%) !important;
+}
+.fade-in-2{
+    opacity: 1 !important;
+    transform: translate(-50%,15%) !important;
+}
+.enter-in{
+    transform: translateX(0%) !important;
+}
+.enter-in-right-img{
+    opacity: 1 !important;
+    transform: translateX(40%) !important;
+    @media #{$bigmobile} {
+        transform: translateX(0%) !important;
+    }
+    @media #{$smallmobile} {
+        transform: translateX(0%) !important;
+    }
+}
+.enter-in-left-img{
+    opacity: 1 !important;
+    transform: translateX(-40%) !important;
+    @media #{$bigmobile} {
+        transform: translateX(0%) !important;
+    }
+    @media #{$smallmobile} {
+        transform: translateX(0%) !important;
+    }
+}
+.draw-line{
+    animation: line-anim 3.5s ease infinite;
+}
+.scale{
+    transform: scale(1.1) !important;
+}
+.animate{
+    animation: ToTop .5s ease-in-out forwards;
+    @media #{$bigmobile} {
+    animation: ToTopPhone .5s ease-in-out forwards;
+
+    }
+    @media #{$smallmobile} {
+    animation: ToTopPhone .5s ease-in-out forwards;
+    }
+}
+.animateFont{
+    animation: OpacityAnimation 1.5s ease forwards;
+}
+@keyframes ToTop {
+    to{
+        top:40%
+    }
+}
+
+@keyframes ToTopPhone {
+    to{
+       top : 18%;
+    }
+}
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes Typing {
+    to{
+        left: -115px;
+    }
+}
+@keyframes whiteFill {
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: white;
+    }
+}
+@keyframes Destroy {
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes FontFifty {
+    to{
+        font-size: 50px;
+    }
+}
+@keyframes OpacityAnimation {
+    to{
+        opacity: 1;
+    }
+}
+
+//FirstSlider
+#ProductsC .splide__pagination__page{
+    display: none;
+}
+//endofFslider
