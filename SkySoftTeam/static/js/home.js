@@ -2,14 +2,13 @@
 const logo = $('#logo path');
 const certificate = $('#certificate path');
 const handShake = $('#handShake path');
-const webprogramming = $('#web-programming path');
+const webprogramming = $('#united path');
 
-var s = 1;
+var s = 3;
 for(let i = 0; i<logo.length; i++){
 s+=0.3;
 $(logo[i]).attr('style' , 'animation:line-anim '+s+'s ease forwards;')
 }
-
 
 //DestroyTheWelcomeDiv
 const WelcomeDiv = $('.welcome')[0]
@@ -50,24 +49,20 @@ splider.on('moved', function () {
 $(window).on('scroll' , function(){
  let x = 0
  switch(true){
-    case window.scrollY > 2990 : {
+    case window.scrollY > 2610 : {
         $('.logoCon').addClass('fade-in-opacity')
         break;
     }
     case window.scrollY > 250 :{
-        var arr = [20,3,30]
-        for(let i = 0; i<3; i++){
+        var arr = [14,5000,9,50]
+        for(let i = 0; i<4; i++){
             var el = $('#CountUp'+(i+1))
-            if(parseInt($(el).text()) == 0 ){
                 $(el).jQuerySimpleCounter({
                     start : 0,
                     end : arr[i],
                     easing: 'swing',
                     duration : 1500
                 })
-            }else{
-                $(el).text($(el).text())
-            }
         }
         break;
       }
