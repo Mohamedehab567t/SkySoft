@@ -54,7 +54,7 @@ $(window).on('scroll' , function(){
         break;
     }
     case window.scrollY > 250 :{
-        var arr = [14,5000,9,50]
+        var arr = [14,999,9,50]
         for(let i = 0; i<4; i++){
             var el = $('#CountUp'+(i+1))
                 $(el).jQuerySimpleCounter({
